@@ -4,11 +4,11 @@
 
 The **Front-End Checklist** is an exhaustive list of all elements you need to have / to test before launching your site / page HTML to production.
 
-It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
+Он основан на многолетнем опыте разработчиков Front-End, с дополнениями, полученными из некоторых других контрольных списков с открытым исходным кодом.
 
 ## Table of Contents
 
-1. **[How to use](#how-to-use)**
+1. **[Как пользоваться](#how-to-use)**
 2. **[Head](#head)**
 3. **[HTML](#html)**
 4. **[Webfonts](#webfonts)**
@@ -22,17 +22,17 @@ It is based on Front-End developers' years of experience, with the additions com
 
 ## How to use?
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
+Все элементы в контрольном списке Front-End необходимы для большинства проектов, но некоторые элементы могут быть опущены или не являются существенными (в случае веб-приложения администрирования вам может не понадобиться RSS-канал, например). Мы решили использовать 3 уровня гибкости:
 
-* ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
-* ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-* ![High][high_img] means that the item **can't be omitted** by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* ![Low][low_img] означает, что элемент **рекомендуется** , но может быть опущен в некоторых конкретных ситуациях.
+* ![Medium][medium_img] означает, что этот пункт **настоятельно рекомендуется** и в конечном итоге может быть опущен в некоторых действительно конкретных случаях. Некоторые элементы, если их пропустить, могут иметь плохие последствия с точки зрения производительности или SEO.
+* ![High][high_img] означает, что элемент **не может быть опущен** по любой причине. Вы можете вызвать дисфункцию на своей странице или получить доступность или проблемы с SEO. В первую очередь приоритет тестирования должен быть в этих элементах.
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+У некоторых ресурсов есть смайлик, который поможет вам понять, какой тип содержимого / помощи вы можете найти в контрольном списке:
 
-* 📖: documentation or article
-* 🛠: online tool / testing tool
-* 📹: media or video content
+* 📖: документация или статья
+* 🛠: онлайн-инструмент / тестирования
+* 📹: медиа или видеоконтент
 
 ---
 
@@ -42,7 +42,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ### Meta tag
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] Doctype - это HTML5 и находится на вершине всех ваших HTML-страниц..
 
 ```html
 <!-- Doctype HTML5 -->
