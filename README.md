@@ -53,51 +53,51 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 
 *The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
 
-* [ ] **Charset:** ![High][high_img] The charset declared (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] Объявленная кодировка (UTF-8) объявлена правильно.
 
 ```html
-<!-- Set character encoding for the document -->
+<!-- Установить кодировку для документа -->
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] The X-UA-Compatible meta tag is present.
+* [ ] **X-UA-Compatible:** ![Medium][medium_img] Представлен метатег X-UA-совместимый.
 
 ```html
-<!-- Instruct Internet Explorer to use its latest rendering engine -->
+<!-- Попросите Internet Explorer использовать последний механизм рендеринга -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
 > 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [ ] **Viewport:** ![High][high_img] Видовое окно объявлено правильно.
 
 ```html
-<!-- Viewport for responsive web design -->
+<!-- Видовой экран для гибкого веб-дизайна -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: No more than 65 characters, website title included).
+* [ ] **Title:** ![High][high_img] Заголовок используется на всех страницах (SEO: не более 65 символов, включая название сайта).
 
 ```html
-<!-- Document Title -->
-<title>Page Title less than 65 characters</title>
+<!-- Заголовок документа -->
+<title>Заголовок страницы менее 65 символов</title>
 ```
 
 > 📖 [Title - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
-* [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150 characters.
+* [ ] **Description:** ![High][high_img] Предоставлено метаописание, оно уникально и не имеет более 150 символов.
 
 ```html
-<!-- Meta Description -->
-<meta name="description" content="Description of the page less than 150 characters">
+<!-- Описание Meta -->
+<meta name="description" content="Описание страницы менее 150 символов">
 ```
 
-* [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format (dimensions: 32x32px).
+* [ ] **Favicons:** ![Medium][medium_img]Каждый значок был создан и отображен правильно. Если у вас есть только «favicon.ico», поместите его в корень вашего сайта. Обычно вам не нужно использовать разметку. Тем не менее, по-прежнему хорошей практикой является ссылка на него, используя приведенный ниже пример.Сегодня **формат PNG рекомендуется** в формате `.ico` (размеры: 32x32px).
 
 ```html
-<!-- Standard favicon -->
+<!-- Стандартный значок -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- Рекомендуемый формат значка -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
@@ -107,7 +107,7 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch favicon apple-mobile-web-app-capable are present. *(Create your Apple Icon file with at least 200x200px dimension to support all dimensions that you may need)*
+* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch значок apple-mobile-web-app-capable представлен. *(Создайте файл Apple Icon с размером не менее 200x200 пикселей, чтобы поддерживать все измерения, которые могут вам понадобиться.)*
 
 ```html
 <!-- Apple Touch Icon -->
@@ -116,22 +116,22 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 
 > 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+* [ ] **Canonical:** ![Medium][medium_img] Используйте `rel="canonical"`, чтобы избежать дублирования содержимого
 
 ```html
-<!-- Helps prevent duplicate content issues -->
+<!-- Помогает предотвратить дублирование контента -->
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
 ### HTML tags
 
-* [ ] **Language tag:** ![High][high_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **Language tag:** ![High][high_img] Языковой тег вашего сайта указан и относится к языку текущей страницы.
 
 ```html
 <html lang="en">
 ```
 
-* [ ] **Direction tag:** ![Medium][medium_img] The direction of lecture is specified on the body tag (It can be used on another HTML tag).
+* [ ] **Direction tag:** ![Medium][medium_img] Направление течения указано в теге body (его можно использовать в другом теге HTML).
 
 ```html
 <html dir="rtl">
@@ -139,29 +139,30 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 
 > 📖 [dir - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **Alternate language:** ![Low][low_img] Языковой тег вашего сайта указан и относится к языку текущей страницы.
 
 ```html
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+* [ ] **Conditional comments:** ![Low][low_img] Условные комментарии присутствуют в IE, если это необходимо.
 
 > 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+* [ ] **RSS feed:** ![Low][low_img] Если ваш проект является блогом или имеет статьи, ссылка RSS была предоставлена.
 
-* [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
+
+* [ ] **CSS Critical:** ![Medium][medium_img] Критический CSS (или «выше складки») собирает все CSS, используемые для визуализации видимой части страницы. Он встроен перед вашим основным вызовом CSS и между `<style> </ style>` в одной строке (уменьшен).
 
 > 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical)
 
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
+* [ ] **CSS order:** ![High][high_img]Все файлы CSS загружаются перед любыми файлами JavaScript в `<head>`.(За исключением случая, когда иногда файлы JS загружаются асинхронно поверх вашей страницы).
 
 ### Social meta
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+***Facebook OG*** и ***Twitter Cards*** для любого веб-сайта настоятельно рекомендуется. Другие теги социальных медиа можно рассмотреть, если вы нацеливаете определенное присутствие на них и хотите обеспечить отображение.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, 1200 x 630 pixels recommended.
+* [ ] **Facebook Open Graph:** ![Low][low_img] Все Facebook Open Graph (OG) протестированы и никого не хватает или с ложной информацией. Изображения должны быть не менее 600 x 315 пикселей, рекомендуется 1200 x 630 пикселей.
 
 ```html
 <meta property="og:type" content="website">
@@ -174,7 +175,7 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 ```
 
 > * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
-> * 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+> * 🛠 Проверьте свою страницу с помощью [Facebook OG testing](https://developers.facebook.com/tools/debug/)
 
 * [ ] **Twitter Card:** ![Low][low_img]
 
@@ -197,77 +198,80 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 
 ## HTML
 
-### Best practices
+### Лучшие практики
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+
+* [ ] **HTML5 Семантические элементы:** ![High][high_img] Семантические элементы HTML5 используются соответствующим образом (заголовок, раздел, нижний колонтитул, основной ...).
 
 > 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error page needs to have his CSS integrated (no external call on the current server).
+* [ ] **Страницы ошибок:** ![High][high_img] Ошибка 404 и 5xx. Помните, что страница ошибок 5xx должна иметь встроенный CSS (без внешнего вызова на текущем сервере).
 
-* [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Medium][medium_img] Если вы используете внешние ссылки с `target =" _ blank "`, ваша ссылка должна иметь атрибут `rel =" noopener "`, чтобы предотвратить табуляцию вкладок. Если вам нужно поддерживать более старые версии Firefox, используйте `rel =" noopener noreferrer "`.
 
-> 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+> 📖 [Подробнее о rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
+* [ ] **Очистить комментарии:** ![Low][low_img] Необязательный код необходимо удалить перед отправкой страницы в производство.
 
-### HTML testing
 
-* [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
+### Тестирование HTML
 
-> 🛠 [W3C validator](https://validator.w3.org/)
+* [ ] **W3C совместимый:** ![High][high_img] Все страницы должны быть протестированы с помощью валидатора W3C для определения возможных проблем в HTML-коде.
+> 🛠 [Валидатор W3C](https://validator.w3.org/)
 
-* [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+* [ ] **HTML Lint:** ![High][high_img] Я использую инструменты, которые помогут мне проанализировать любые проблемы, которые могут возникнуть в моем HTML-коде.
 
-> 🛠 [Dirty markup](https://dirtymarkup.com/)
+> 🛠 [Грязная разметка](https://dirtymarkup.com/)
 
-* [ ] **Desktop Browsers:** ![High][high_img] All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Mobile Browsers:**  ![High][high_img] All pages were tested on all current mobile browsers (Native browser, Chrome, Safari...).
+* [ ] **Настольные браузеры:** ![High][high_img] Все страницы были протестированы на всех современных настольных браузерах (Safari, Firefox, Chrome, Internet Explorer, EDGE ...).
 
-* [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404 error.
+* [ ] **Мобильные браузеры:**  ![High][high_img] Все страницы были протестированы во всех мобильных браузерах (собственный браузер, Chrome, Safari ...).
+
+* [ ] **Проверка ссылок:** ![High][high_img] На моей странице нет сломанных ссылок, убедитесь, что у вас нет ошибки 404.
 
 > 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
+* [ ] **Тест Adblockers:** ![Medium][medium_img] Ваш веб-сайт правильно показывает ваш контент с включенными рекламными блоками (вы можете предоставить сообщение, призывающее людей отключить их рекламный блок).
 
-- [ ] **Pixel perfect:** ![High][high_img] Pages are close to pixel perfect. Depending on the quality of the creatives, you may not be 100% accurate, but your page needs to be close to your template.
 
-> [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
+- [ ] **Pixel perfect:** ![High][high_img] Страницы близки к пикселю. В зависимости от качества объявлений, вы не можете быть на 100% точным, но ваша страница должна быть близка к вашему шаблону.
 
-**[⬆ back to top](#table-of-contents)**
+> [Pixel Perfect - Расширение Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
+
+**[⬆ вернуться к началу](#table-of-contents)**
 
 ---
 
-## Webfonts
+## Веб-шрифты
 
-* [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+* [ ] **Формат Webfont:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
 
-> * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
-> * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
-> * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
-> * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
+> * 📖 [WOFF - Формат Web Open Font - Caniuse](https://caniuse.com/#feat=woff).
+> * 📖 [WOFF 2.0 - Формат Web Open Font - Caniuse](https://caniuse.com/#feat=woff2).
+> * 📖 [TTF/OTF - TrueType и OpenType font support](https://caniuse.com/#feat=ttf)
+> * 📖 [Использование @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+* [ ] **Размер Webfont:** ![High][high_img] Размеры Webfont не превышают 2 МБ (все варианты включены).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#table-of-contents)**
 
 ---
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/).
+> **Заметки:** Взгляни на [Рекомендации CSS](https://cssguidelin.es/) и [Советы по Sass](https://sass-guidelin.es/) за которыми следуют большинство разработчиков Front-End. Если у вас есть сомнения в свойствах CSS, вы можете посетить [Справочник CSS](http://cssreference.io/).
 
-* [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
-* [ ] **Preprocessors:** ![Medium][medium_img] Your page is using a CSS preprocessor ([Sass](http://sass-lang.com/) is preferred).
-* [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [ ] **Отзывчивый веб-дизайн:** ![High][high_img] Веб-сайт использует отзывчивый веб-дизайн.
+* [ ] **Печать CSS:** ![Medium][medium_img] На каждой странице предоставляется таблица стилей печати.
+* [ ] **Препроцессоры:** ![Medium][medium_img] На вашей странице используется препроцессор CSS ([Sass](http://sass-lang.com/) является предпочтительным).
+* [ ] **Уникальный идентификатор:** ![High][high_img] Если используются идентификаторы, они уникальны для страницы.
+* [ ] **Сбросить CSS:** ![High][high_img] Сброс CSS (сброс, нормализация или перезагрузка) используется и обновляется. *(Если вы используете CSS-структуру, такую как Bootstrap или Foundation, в нее уже включен Normalize.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
+* [ ] **Префикс JS:** ![Low][low_img] Все классы (или id-используемые в файлах JavaScript) начинаются с **js -** и не используются в CSS-файлах.
 
 ```html
 <div id="js-slider" class="my-slider">
@@ -275,41 +279,44 @@ The **Front-End Checklist** is an exhaustive list of all elements you need to ha
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **CSS embed or line:** ![High][high_img] Avoid at all cost the use of CSS embed or inline: only used for valid reasons (ex: background-image for slider, CSS critical).
-* [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **Вставка CSS или строка:** ![High][high_img] Избегайте любой ценой использования встроенного или встроенного CSS: используется только по уважительным причинам (например: background-image для слайдера, критический CSS).
 
-> 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
+* [ ] **Префиксы поставщиков:** ![High][high_img] Префиксы поставщика CSS используются и генерируются соответственно совместимости с поддержкой браузера.
+> 🛠 [Autoprefixer CSS онлайн](https://autoprefixer.github.io/)
 
-### Performance
+### Представление
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file. *(Not for HTTP/2)*
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Concatenation:** ![High][high_img] Файлы CSS объединяются в один файл. *(Not for HTTP/2)*
+- [ ] **Минификация:** ![High][high_img] Все файлы CSS уменьшены.
+- [ ] **Неблокируемая:** ![Medium][medium_img] Файлы CSS должны быть неблокируемыми, чтобы помешать DOM отнимать время для загрузки.
 
-> * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
-> * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
+> * 📖 [loadCSS группой нитей](https://github.com/filamentgroup/loadCSS)
+> * 📖 [Пример предварительного загрузки CSS с использованием loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] Remove unused CSS.
+- [ ] **Неиспользуемый CSS:** ![Low][low_img] Удалить неиспользуемый CSS.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
 > * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
-### CSS testing
+### Проверка CSS
 
-* [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+* [ ] **Stylelint:** ![High][high_img] Все файлы CSS или SCSS без ошибок.
+
 
 > * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 > * 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [ ] **Отзывчивый веб-дизайн:** ![High][high_img] Все страницы были протестированы на следующих контрольных точках: 320 пикселей, 768 пикселей, 1024 пикселей (может быть больше / отличается в зависимости от вашей аналитики).
 
-* [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
+
+* [ ] **CSS Validator:** ![Medium][medium_img] CSS был протестирован и исправлены соответствующие ошибки.
+
 
 > 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-* [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
+* [ ] **Направление считывания:** ![High][high_img] Все страницы должны быть протестированы для языков LTR и RTL, если они нуждаются в поддержке.
 
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 | Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 | Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
